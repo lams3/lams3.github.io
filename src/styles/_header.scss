@@ -10,6 +10,7 @@
   .particles-js-canvas-el {
     width:100% !important;
     height:100vh !important;
+    filter: blur(3px);
   }
 }
 
@@ -40,7 +41,7 @@
     color: #FFF;
     margin-top: 10px;
     @media only screen and (min-width:$cut){
-      font-size: 40px;
+      font-size: 25px;
     }
   }
 }
@@ -52,6 +53,13 @@
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
+    transition: all .7s;
+    &:hover {
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
     @media only screen and (min-width:$cut){
       font-size: 20px;
     }
@@ -74,12 +82,12 @@
     border: 2px solid #FFF;
     transition: all .7s;
     &:hover {
-      color: $main;
-      background: #FFF;
+      color: #FFF;
+      background: $sec;
     }
     &:active {
-      color: $main;
-      background: #FFF;
+      color: #FFF;
+      background: $sec;
     }
     @media only screen and (min-width:$cut) {
       width: 35px;
@@ -92,7 +100,7 @@
 .down {
   color: #FFF;
   position: absolute;
-  bottom: 25px;
+  bottom: 5px;
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -103,6 +111,7 @@
       position: absolute;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
+      z-index: 1;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);

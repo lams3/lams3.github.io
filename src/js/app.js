@@ -6,23 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#999999"
       },
       "shape": {
         "type": "polygon",
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#ffffff"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 6
         },
         "image": {
           "src": "img/github.svg",
@@ -31,73 +31,72 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 0.7,
+        "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 3,
+        "value": 10,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 19.18081918081918,
+          "enable": true,
+          "speed": 14.617389821424212,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "distance": 160.3412060865523,
+        "color": "#2ccfcf",
+        "opacity": 0.4008530152163807,
+        "width": 3.367165327817598
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 5,
         "direction": "none",
         "random": true,
         "straight": false,
-        "out_mode": "out",
+        "out_mode": "bounce",
         "bounce": false,
         "attract": {
           "enable": false,
-          "rotateX": 600,
+          "rotateX": 1200,
           "rotateY": 1200
         }
-      },
-      nb: 80
+      }
     },
     "interactivity": {
       "detect_on": "window",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "grab"
+          "enable": true,
+          "mode": "bubble"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 200,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.37840772609861667
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
+          "distance": 250,
+          "size": 20,
+          "duration": 3.0046856855149766,
+          "opacity": 0.3816762897816322,
           "speed": 3
         },
         "repulse": {
@@ -113,6 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
     "retina_detect": true
-  });
+  }, false);
 
-}, false);
+});
